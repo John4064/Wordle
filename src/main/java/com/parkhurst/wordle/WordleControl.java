@@ -5,10 +5,10 @@ import javafx.scene.control.Label;
 
 public class WordleControl {
     @FXML
-    private Label welcomeText;
+    private Label finalWord;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onSubmitButtonClick() {
+        finalWord.setText("Pets");
     }
 }
