@@ -5,8 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import com.parkhurst.wordle.WordGenerator;
 
 public class WordleApp extends Application {
+
+    public static String guessWord;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(WordleApp.class.getResource("wordle-view.fxml"));
@@ -15,6 +18,7 @@ public class WordleApp extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        guessWord = WordGenerator.getWord();
     }
 
     public static void main(String[] args) {

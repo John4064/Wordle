@@ -1,40 +1,29 @@
 package com.parkhurst.wordle;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Random;
 
 public class WordGenerator {
-
-    /**@brief: Will import a predefined wordsList for the game!
-     * @return Returns a String array of words
+    /**@brief: Will Generate a randomly select word from the list
+     * @return Returns a 5 letter word
      */
-    private static String []importFil(){
-        String []words = new String[55];
-        try{
-            File wordList = new File("words.txt");
-            Scanner myReader = new Scanner(wordList);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                System.out.println(data);
-            }
-            myReader.close();
-        }catch(FileNotFoundException e){
-            System.out.println("An Error has occurred in Importing wordlist");
+    public static String getWord() throws IOException {
+        String filName = "\\words.txt";
+        try {
+            Random rand = new Random();
+            //Current word list has size 5757 length
+            int fileLen = 5757;
+            int int_random = rand.nextInt(fileLen);
+
+            String line32 = Files.readAllLines(Paths.get(System.getProperty("user.dir")+"\\src\\main\\resources\\com\\parkhurst\\wordle"+filName)).get(int_random);
+            return line32;
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
             e.printStackTrace();
+            return "";
         }
-
-        return words;
-    }
-    public static void main(String []args){
-        //WordleApp.class.getResource("wordle-view.fxml");
-        String []wordList = importFil();
-        if(wordList.length == 0){
-            System.out.println(-3);
-        }else{
-            System.out.println(3);
-        }
-
     }
 }
