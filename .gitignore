@@ -44,3 +44,10 @@ hs_err_pid*
 .idea/modules.xml
 .idea/vcs.xml
 .idea/Wordle.iml
+.DS_Store
+.idea/libraries/Maven__org_openjfx_javafx_base_mac_17_0_1.xml
+.idea/libraries/Maven__org_openjfx_javafx_controls_mac_17_0_1.xml
+.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_17_0_1.xml
+.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_17_0_1.xml
+.idea/uiDesigner.xml
+.idea/workspace.xml
