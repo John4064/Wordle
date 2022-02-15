@@ -18,7 +18,7 @@ public class WordleApp extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-        guessWord = WordGenerator.getWord();
+
     }
 
     public static void main(String[] args) {
