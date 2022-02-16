@@ -1,8 +1,9 @@
 package com.parkhurst.wordle;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import com.parkhurst.wordle.WordGenerator.*;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -11,10 +12,18 @@ public class WordleControl {
     @FXML
     private Label finalWord;
     @FXML
-    private Label timeText;
+    public Button exitB;
     private boolean start = false;
     private String guessWord;
 
+
+
+    @FXML
+    protected void onExitClick() throws IOException{
+        Stage stage = (Stage) exitB.getScene().getWindow();
+        stage.close();
+    }
+    
     @FXML
     protected void onStartButtonClick() throws IOException {
         if(start == false){

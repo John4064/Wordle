@@ -5,21 +5,26 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" spacing="20.0" style="-fx-background-color: #00132B;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkhurst.wordle.WordleControl">
-   <Pane prefHeight="761.0" prefWidth="988.0">
+<Pane fx:id="background" prefHeight="768.0" prefWidth="1024.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkhurst.wordle.WordleControl">
       <children>
-           <Label fx:id="finalWord" />
-         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" stroke="BLACK" strokeType="INSIDE" width="984.0" />
-         <TextArea layoutX="406.0" layoutY="129.0" maxWidth="384.0" prefHeight="44.0" prefWidth="173.0" promptText="Enter 5 letter word" />
+           <Label fx:id="finalWord" layoutX="445.0" layoutY="38.0" text="words">
+            <font>
+               <Font size="36.0" />
+            </font></Label>
+         <TextArea id="prompt" layoutX="406.0" layoutY="129.0" maxWidth="384.0" prefHeight="44.0" prefWidth="173.0" promptText="Enter 5 letter word" />
           <Button layoutX="873.0" layoutY="140.0" onAction="#onStartButtonClick" prefHeight="25.0" prefWidth="105.0" text="Start" />
-         <TextArea layoutX="301.0" layoutY="229.0" maxWidth="384.0" minWidth="384.0" prefHeight="340.0" prefWidth="384.0" />
+         <TextArea editable="false" layoutX="301.0" layoutY="229.0" maxWidth="384.0" minWidth="384.0" prefHeight="340.0" prefWidth="384.0" text="BEARS" wrapText="true">
+            <font>
+               <Font name="Carlito" size="46.0" />
+            </font></TextArea>
           <Label fx:id="timeText" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="53.0" layoutX="-2.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="1028.0" />
+      <Button fx:id="exitB" layoutX="949.0" layoutY="-8.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="53.0" prefWidth="75.0" text="Close" />
       </children>
-   </Pane>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-</VBox>
+</Pane>
