@@ -1,0 +1,10 @@
+.button{
+    -fx-text-fill: #00132B;
+    -fx-background-color: rgb(202, 255, 251);;
+    -fx-padding: 3 6 6 6;
+}
+.text-area{
+    -fx-text-fill: #e55555;
+    -fx-background-color: #e55555;
+    -fx-opacity: .65;
+}
