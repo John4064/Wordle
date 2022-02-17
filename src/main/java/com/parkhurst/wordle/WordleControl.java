@@ -23,7 +23,7 @@ public class WordleControl {
         Stage stage = (Stage) exitB.getScene().getWindow();
         stage.close();
     }
-    
+
     @FXML
     protected void onStartButtonClick() throws IOException {
         if(start == false){

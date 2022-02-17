@@ -1,21 +1,21 @@
 .button{
     -fx-text-fill: #00132B;
-    -fx-background-color: rgb(202, 255, 251);;
+    -fx-background-color: rgb(202, 255, 251);
     -fx-padding: 3 6 6 6;
     /**-fx-border: 2px solid #06f;**/
-
+    -fx-font-size: 18;
 }
 .text-area{
     -fx-text-fill: #e55555;
-    -fx-background-color: #e55555;
-
+    -fx-background-color: #0B3142;
+    
 }
 #background{
     -fx-background-color: #00132B;
 }
 
 #prompt{
-    -fx-opacity: .65;
+    -fx-background-color: rgb(202, 255, 251);
 }
 #finalWord{
     -fx-text-fill: #62a6ff;
