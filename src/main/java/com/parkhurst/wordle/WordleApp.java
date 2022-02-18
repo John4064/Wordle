@@ -13,7 +13,7 @@ import javafx.stage.StageStyle;
 
 public class WordleApp extends Application {
 
-    public static String guessWord;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(WordleApp.class.getResource("wordle-view.fxml"));

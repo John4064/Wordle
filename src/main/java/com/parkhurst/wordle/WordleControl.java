@@ -16,6 +16,9 @@ public class WordleControl {
     private boolean start = false;
     private String guessWord;
 
+    public WordleControl() throws IOException {
+        guessWord = WordGenerator.getWord();
+    }
 
 
     @FXML
@@ -27,9 +30,9 @@ public class WordleControl {
 
     @FXML
     protected void onStartButtonClick() throws IOException {
-        if(start == false){
+        if(!start){
             start = true;
-            guessWord = WordGenerator.getWord();
+
             finalWord.setText(guessWord);
             System.out.println("Start");
         }
