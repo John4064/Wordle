@@ -20,6 +20,7 @@ public class WordleControl {
 
     @FXML
     protected void onExitClick() throws IOException{
+        //Dead Code keeping for future functionality
         Stage stage = (Stage) exitB.getScene().getWindow();
         stage.close();
     }

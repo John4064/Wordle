@@ -16,19 +16,10 @@
             </font></Label>
          <TextArea id="prompt" layoutX="406.0" layoutY="129.0" maxWidth="384.0" prefHeight="44.0" prefWidth="173.0" promptText="Enter 5 letter word" />
           <Button layoutX="873.0" layoutY="140.0" onAction="#onStartButtonClick" prefHeight="25.0" prefWidth="105.0" text="Start" />
-         <TextArea editable="false" layoutX="301.0" layoutY="229.0" maxWidth="384.0" minWidth="384.0" prefHeight="271.0" prefWidth="384.0" text="BEARS Salmon" wrapText="true">
-            <font>
-               <Font name="Carlito" size="46.0" />
-            </font></TextArea>
+         <TextArea editable="false" layoutX="301.0" layoutY="229.0" maxWidth="384.0" minWidth="384.0" prefHeight="271.0" prefWidth="384.0" text="BEARS Salmon" wrapText="true"></TextArea>
           <Label fx:id="timeText" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b3142" height="53.0" layoutX="-2.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="1028.0" />
-      <Button fx:id="exitB" layoutX="949.0" layoutY="-8.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="53.0" prefWidth="75.0" text="Close">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font></Button>
+
       <Button layoutX="631.0" layoutY="139.0" mnemonicParsing="false" text="Submit" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b3142" height="200.0" layoutX="533.0" layoutY="522.0" stroke="BLACK" strokeType="INSIDE" width="152.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b3142" height="200.0" layoutX="301.0" layoutY="522.0" stroke="BLACK" strokeType="INSIDE" width="152.0" />
       </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

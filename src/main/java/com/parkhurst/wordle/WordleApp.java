@@ -21,7 +21,6 @@ public class WordleApp extends Application {
         stage.setTitle("Wordle");
         //Icon origin https://www.flaticon.com/free-icons/vision"
         stage.getIcons().add(new Image(Objects.requireNonNull(WordleApp.class.getResourceAsStream("view.png"))));
-        stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

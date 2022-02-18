@@ -4,13 +4,20 @@
     -fx-padding: 3 6 6 6;
     /**-fx-border: 2px solid #06f;**/
     -fx-font-size: 18;
+
 }
 .text-area{
     -fx-text-fill: #e55555;
-    -fx-background-color: #0B3142;
+    -fx-background-color: rgb(202, 255, 251);
+    -fx-border-color: rgb(202, 255, 251);
+    -fx-border-width: 5px;
 
 }
-#background{
+.text-area .content{
+    -fx-background-color: rgb(202, 255, 251);
+}
+.root{
+    -fx-font-family: Carlito;
     -fx-background-color: #00132B;
 }
 
